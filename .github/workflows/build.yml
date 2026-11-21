@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Unzip project
-        run: unzip -q -o "$(ls -1 POCO-System-Control-v0_4_0-source.zip | sort | tail -n1)"
+        run: unzip -q -o "$(ls -1 POCO-System-Control-v*.zip | sort | tail -n1)"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
